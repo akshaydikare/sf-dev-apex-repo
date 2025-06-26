@@ -9,4 +9,8 @@ public class HelloWorld {
         System.debug(greeting);
     }
 
+    public static void fetchAccounts(){
+        List<Account> accs = [Select Id, Name, Industry, Rating from Account];
+    }
+
 }
